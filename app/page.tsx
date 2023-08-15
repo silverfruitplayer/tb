@@ -127,10 +127,10 @@ export default function Home() {
     }
   }, [err, error, data]);
 
-  async function handleContextMenu() {
-    preventDefault();
+  const handleContextMenu = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    event.preventDefault();
     alert("Right-clicking is not allowed on this page.");
-  }
+  };
   
   async function Submit() {
     setError("");
@@ -159,7 +159,7 @@ export default function Home() {
   }
 
   return (
-    <div className="pt-6 mx-12">
+    <div className="pt-6 mx-12" onContextMenu={handleContextMenu}>     
       <nav className="flex justify-between ">
         <div className="self-center">
           <Link href="/">Terabox Downloader</Link>
