@@ -127,7 +127,7 @@ export default function Home() {
     }
   }, [err, error, data]);
 
-  function handleContextMenu(event) {
+  function handleContextMenu(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
     event.preventDefault();
     alert("Right-clicking is not allowed on this page.");
   }
