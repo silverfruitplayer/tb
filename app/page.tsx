@@ -162,13 +162,13 @@ export default function Home() {
     <div className="pt-6 mx-12">     
       <nav className="flex justify-between ">
         <div className="self-center">
-          <Link href="/">Terabox Downloader</Link>
+          <Link href="https://terabox.com">Terabox Downloader</Link>
         </div>
         <ul>
           <li>
             {/* <Camera color="red" size={48} /> */}
             <Button className="bg-black-600">
-              <Link href="https://github.com/silverfruitplayer">GitHub</Link>
+              <Link href="https://github.com/silverfruitplayer">GitHub (SilverFruitPlayer)</Link>
             </Button>
           </li>
         </ul>
@@ -230,7 +230,7 @@ export default function Home() {
       {data && (
         <main className="my-10 py-10 bg-slate-700 rounded-lg items-start flex flex-col justify-start gap-2">
           <div className="w-full">
-            <div className="rounded-md flex justify-center items-center " onContextMenu={handleContextMenu}>
+            <div className="rounded-md flex justify-center items-center ">
               <Image
                 className="blur-md hover:filter-none rounded-md p-3 transition duration-300 ease-in-out transform scale-100 hover:scale-110 hover:rounded-md opacity-100 hover:opacity-100 "
                 style={{ objectFit: "contain" }}
@@ -242,7 +242,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="pl-3 pt-3" onContextMenu={handleContextMenu}>
+          <div className="pl-3 pt-3">
             <div className="pt-10"></div>
             <h1 className="text-sm lg:text-xl text-white ">
               Title:{" "}
