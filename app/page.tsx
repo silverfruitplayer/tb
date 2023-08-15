@@ -159,7 +159,6 @@ export default function Home() {
   }
 
   return (   
-    <div onContextMenu={handleContextMenu}>
       <div className="pt-6 mx-12">
       <nav className="flex justify-between ">
         <div className="self-center">
@@ -180,7 +179,7 @@ export default function Home() {
         </h1>
         <p className="text-center text-white">Enter your Terabox link below</p>
         <div className="flex flex-col justify-center " onContextMenu={handleContextMenu}>
-          <div className="self-center text-black">
+          <div className="self-center text-black" onContextMenu={handleContextMenu}>
             <Input
               disabled={disableInput}
               className="max-w-80"
@@ -230,7 +229,7 @@ export default function Home() {
       </main>
       {data && (
         <main className="my-10 py-10 bg-slate-700 rounded-lg items-start flex flex-col justify-start gap-2">
-          <div className="w-full">
+          <div className="w-full" onContextMenu={handleContextMenu}>
             <div className="rounded-md flex justify-center items-center " onContextMenu={handleContextMenu}>
               <Image
                 className="blur-md hover:filter-none rounded-md p-3 transition duration-300 ease-in-out transform scale-100 hover:scale-110 hover:rounded-md opacity-100 hover:opacity-100 "
@@ -244,7 +243,7 @@ export default function Home() {
             </div>
           </div>
           <div className="pl-3 pt-3" onContextMenu={handleContextMenu}>
-            <div className="pt-10"></div>
+            <div className="pt-10" onContextMenu={handleContextMenu}></div>
             <h1 className="text-sm lg:text-xl text-white ">
               Title:{" "}
               <span className="text-white  text-md lg:text-2xl font-bold ">
