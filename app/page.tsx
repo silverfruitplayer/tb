@@ -158,9 +158,9 @@ export default function Home() {
     setToken(encryptedData);
   }
 
-  return (
-   <div onContextMenu={handleContextMenu}> 
-    <div className="pt-6 mx-12" onContextMenu={handleContextMenu}>     
+  return (   
+    <div onContextMenu={handleContextMenu}>
+      <div className="pt-6 mx-12">
       <nav className="flex justify-between ">
         <div className="self-center">
           <Link href="/">Terabox Downloader</Link>
