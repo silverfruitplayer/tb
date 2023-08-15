@@ -159,6 +159,7 @@ export default function Home() {
   }
 
   return (
+   <div onContextMenu={handleContextMenu}> 
     <div className="pt-6 mx-12" onContextMenu={handleContextMenu}>     
       <nav className="flex justify-between ">
         <div className="self-center">
