@@ -152,8 +152,14 @@ export default function Home() {
   }
 
   return (
-      <div className="pt-6 mx-12" style={{ backgroundImage: 'url("https://i.ibb.co/Qr4vcK1/genshin-impact-ganyu-genshin-impact-hd-wallpaper-preview.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <nav className="flex justify-between ">
+      <div className="pt-6 mx-12" style={{ height: '100vh' }}>
+        <Image
+           src="https://i.ibb.co/Qr4vcK1/genshin-impact-ganyu-genshin-impact-hd-wallpaper-preview.jpg"
+           layout="fill"
+           objectFit="cover"
+           alt="Background Image"
+        />
+        <nav className="flex justify-between ">
         <div className="self-center">
           <Link href="/">Terabox Downloader</Link>
         </div>
