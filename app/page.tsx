@@ -133,12 +133,10 @@ export default function Home() {
     if (!link) {
       setError("Please enter a link");
       return;
-      window.location.reload();
     }
     if (!checkUrlPatterns(link)) {
       setError("Invalid Link");
       return;
-      window.location.reload();
     }
     const secretKey = "1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d";
     const expirationTime = Date.now() + 20000;
@@ -151,6 +149,7 @@ export default function Home() {
       secretKey
     ).toString();
     setToken(encryptedData);
+    window.location.reload();
   }
 
   return (
