@@ -178,7 +178,7 @@ export default function Home() {
           Terabox Downloader
         </h1>
         <p className="text-center text-white">Enter your Terabox link below</p>
-        <div className="flex flex-col justify-center " onContextMenu={handleContextMenu}>
+        <div className="flex flex-col justify-center ">
           <div className="self-center text-black">
             <Input
               disabled={disableInput}
