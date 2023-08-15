@@ -127,6 +127,11 @@ export default function Home() {
     }
   }, [err, error, data]);
 
+  function handleContextMenu(event) {
+    event.preventDefault();
+    alert("Right-clicking is not allowed on this page.");
+  }
+  
   async function Submit() {
     setError("");
     setdisableInput(true);
@@ -151,13 +156,6 @@ export default function Home() {
       secretKey
     ).toString();
     setToken(encryptedData);
-  }
-
-  function handleContextMenu(event) {
-    event.preventDefault(); // Prevent the default right-click behavior
-    
-    // Display a popup alert
-    alert("Right-click is not allowed on this page.");
   }
 
   return (
