@@ -161,8 +161,8 @@ export default function Home() {
       height: '100vh',
       '@media (max-width: 640px)': {
         backgroundSize: 'cover',
-       },
-   }}>   
+      },
+    }}>   
       <nav className="flex justify-between ">
         <div className="self-center">
           <Link href="/">Terabox Downloader</Link>
