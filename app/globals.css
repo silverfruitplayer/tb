@@ -4,6 +4,7 @@
  
 @layer base {
   :root {
+    --background-image: url("https://i.ibb.co/Qr4vcK1/genshin-impact-ganyu-genshin-impact-hd-wallpaper-preview.jpg");
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
