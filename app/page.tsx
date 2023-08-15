@@ -159,7 +159,7 @@ export default function Home() {
   }
 
   return (
-    <div className="pt-6 mx-12" onContextMenu={handleContextMenu}>     
+    <div className="pt-6 mx-12">     
       <nav className="flex justify-between ">
         <div className="self-center">
           <Link href="/">Terabox Downloader</Link>
@@ -188,14 +188,14 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="self-center" onContextMenu={handleContextMenu}>
+        <div className="self-center">
           <Button
             className="bg-green-600"
             disabled={disableInput}
             onClick={Submit}
           >
             {isLoading && (
-              <div role="status" onContextMenu={handleContextMenu}>
+              <div role="status">
                 <svg
                   aria-hidden="true"
                   className="w-6 h-6 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
