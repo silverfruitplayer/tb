@@ -132,10 +132,12 @@ export default function Home() {
     setdisableInput(true);
     if (!link) {
       setError("Please enter a link");
+      window.location.reload();
       return;
     }
     if (!checkUrlPatterns(link)) {
       setError("Invalid Link");
+      window.location.reload();
       return;
     }
     const secretKey = "1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d";
@@ -149,7 +151,6 @@ export default function Home() {
       secretKey
     ).toString();
     setToken(encryptedData);
-    window.location.reload();
   }
 
   return (
